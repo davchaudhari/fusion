@@ -291,37 +291,16 @@ export const tablesProjectData = [
 
 export const invoicesData = [
   {
-    date: "March, 01, 2020",
+    date: "March, 27, 2021",
     code: "#MS-415646",
-    price: "$180",
+    price: "$25",
     logo: FaFilePdf,
     format: "PDF",
   },
   {
-    date: "February, 10, 2020",
+    date: "February, 26, 2021",
     code: "#RV-126749",
-    price: "$250",
-    logo: FaFilePdf,
-    format: "PDF",
-  },
-  {
-    date: "April, 05, 2020",
-    code: "#FB-212562",
-    price: "$560",
-    logo: FaFilePdf,
-    format: "PDF",
-  },
-  {
-    date: "June, 25, 2019",
-    code: "#QW-103578",
-    price: "$120",
-    logo: FaFilePdf,
-    format: "PDF",
-  },
-  {
-    date: "March, 01, 2019",
-    code: "#AR-803481",
-    price: "$300",
+    price: "$25",
     logo: FaFilePdf,
     format: "PDF",
   },
@@ -329,63 +308,27 @@ export const invoicesData = [
 
 export const billingData = [
   {
-    name: "Oliver Liam",
-    company: "Viking Burrito",
-    email: "oliver@burrito.com",
-    number: "FRB1235476",
-  },
-  {
-    name: "Lucas Harper",
-    company: "Stone Tech Zone",
-    email: "lucas@stone-tech.com",
-    number: "FRB1235476",
-  },
-  {
-    name: "Ethan James",
-    company: "Fiber Notion",
-    email: "ethan@fiber.com",
+    name: "Jane Smith",
+    company: "Personal",
+    email: "jsmith@burrito.com",
     number: "FRB1235476",
   },
 ];
 
 export const newestTransactions = [
   {
-    name: "Netflix",
+    name: "Monthly Subscription",
     date: "27 March 2021, at 12:30 PM",
-    price: "- $2,500",
-    logo: FaArrowDown,
-  },
-  {
-    name: "Apple",
-    date: "27 March 2021, at 12:30 PM",
-    price: "+ $2,500",
+    price: "$25",
     logo: FaArrowUp,
   },
 ];
 
 export const olderTransactions = [
   {
-    name: "Stripe",
-    date: "26 March 2021, at 13:45 PM",
-    price: "+ $800",
+    name: "Monthly Subscription",
+    date: "26 February 2021, at 13:45 PM",
+    price: "$25",
     logo: FaArrowUp,
-  },
-  {
-    name: "HubSpot",
-    date: "26 March 2021, at 12:30 PM",
-    price: "+ $1,700",
-    logo: FaArrowUp,
-  },
-  {
-    name: "Webflow",
-    date: "26 March 2021, at 05:00 PM",
-    price: "Pending",
-    logo: AiOutlineExclamation,
-  },
-  {
-    name: "Microsoft",
-    date: "25 March 2021, at 16:30 PM",
-    price: "- $987",
-    logo: FaArrowDown,
-  },
+  }
 ];

@@ -53,18 +53,6 @@ function Billing() {
                 />
               }
             />
-            <PaymentStatistics
-              icon={<Icon h={"24px"} w={"24px"} color='white' as={FaWallet} />}
-              title={"Salary"}
-              description={"Belong interactive"}
-              amount={2000}
-            />
-            <PaymentStatistics
-              icon={<Icon h={"24px"} w={"24px"} color='white' as={FaPaypal} />}
-              title={"Paypal"}
-              description={"Freelance Payment"}
-              amount={4550}
-            />
           </Grid>
           <PaymentMethod
             title={"Payment Method"}

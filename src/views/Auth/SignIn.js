@@ -100,7 +100,7 @@ function SignIn() {
                 _active={{
                   bg: "teal.400",
                 }}>
-                SIGN IN
+                Jane Smith
               </Button>
             </FormControl>
             <Flex

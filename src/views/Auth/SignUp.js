@@ -225,7 +225,7 @@ function SignUp() {
                 ms='5px'
                 href='#'
                 fontWeight='bold'>
-                Sign In
+                Jane Smith
               </Link>
             </Text>
           </Flex>

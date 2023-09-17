@@ -20,12 +20,6 @@ const ChartStatistics = ({ title, amount, icon, percentage }) => {
       <Text fontSize='lg' color={textColor} fontWeight='bold' mb='6px' my='6px'>
         {amount}
       </Text>
-      <Progress
-        colorScheme='teal'
-        borderRadius='12px'
-        h='5px'
-        value={percentage}
-      />
     </Flex>
   );
 };

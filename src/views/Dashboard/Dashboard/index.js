@@ -27,63 +27,52 @@ import OrdersOverview from "./components/OrdersOverview";
 import Projects from "./components/Projects";
 import SalesOverview from "./components/SalesOverview";
 import WorkWithTheRockets from "./components/WorkWithTheRockets";
+import Card from "components/Card/Card";
 
 export default function Dashboard() {
   const iconBoxInside = useColorModeValue("white", "white");
-
   return (
     <Flex flexDirection='column' pt={{ base: "120px", md: "75px" }}>
-      <SimpleGrid columns={{ sm: 1, md: 2, xl: 4 }} spacing='24px'>
+      <SimpleGrid columns={{ sm: 1, md: 2, xl: 4 }} spacing='24px' display='flex'>
         <MiniStatistics
-          title={"Today's Moneys"}
-          amount={"$53,000"}
-          percentage={55}
+          title={"Doctor 1"}
+          name={"Dr. Emily Davis"}
+          icon={<WalletIcon h={"24px"} w={"24px"} color={iconBoxInside} />}>
+        </MiniStatistics>
+        <MiniStatistics
+          title={"Doctor 2"}
+          name={"Dr. Michael Roberts"}
           icon={<WalletIcon h={"24px"} w={"24px"} color={iconBoxInside} />}
         />
         <MiniStatistics
-          title={"Today's Users"}
-          amount={"2,300"}
-          percentage={5}
-          icon={<GlobeIcon h={"24px"} w={"24px"} color={iconBoxInside} />}
-        />
-        <MiniStatistics
-          title={"New Clients"}
-          amount={"+3,020"}
-          percentage={-14}
-          icon={<DocumentIcon h={"24px"} w={"24px"} color={iconBoxInside} />}
-        />
-        <MiniStatistics
-          title={"Total Sales"}
-          amount={"$173,000"}
-          percentage={8}
-          icon={<CartIcon h={"24px"} w={"24px"} color={iconBoxInside} />}
+          title={"Doctor 3"}
+          name={"Dr. Laura Williams"}
+          icon={<WalletIcon h={"24px"} w={"24px"} color={iconBoxInside} />}
         />
       </SimpleGrid>
       <Grid
-        templateColumns={{ md: "1fr", lg: "1.8fr 1.2fr" }}
+        templateColumns={{ md: "1fr", lg: "1.2fr 1.2fr" }}
         templateRows={{ md: "1fr auto", lg: "1fr" }}
         my='26px'
         gap='24px'>
         <BuiltByDevelopers
-          title={"Built by Developers"}
-          name={"Purity UI Dashboard"}
+          name={"Commonalities"}
           description={
-            "From colors, cards, typography to complex elements, you will find the full documentation."
-          }
-          image={
-            <Image
-              src={logoChakra}
-              alt='chakra image'
-              minWidth={{ md: "300px", lg: "auto" }}
-            />
-          }
+            <ul style={{ paddingLeft: '20px', listStyleType: 'disc' }}>
+            <li style={{ paddingLeft: '20px' }}>Continue antispasmodic medication (Medication X) and inquire about dosage.</li>
+            <li style={{ paddingLeft: '20px' }}>Watch diet and fiber intake.</li>
+          </ul>
+            }
         />
-        <WorkWithTheRockets
-          backgroundImage={peopleImage}
-          title={"Work with the rockets"}
+        <BuiltByDevelopers
+          name={"Differences"}
           description={
-            "Wealth creation is a revolutionary recent positive-sum game. It is all about who takes the opportunity first."
-          }
+            <ul style={{ paddingLeft: '20px', listStyleType: 'disc' }} >
+            <li style={{ paddingLeft: '20px' }}>Doctor 1 asks for the most tests and medications and is likely going to be the most expensive (additional Medication Y, Blood Test Z).</li>
+            <li style={{ paddingLeft: '20px' }}> Doctor 2 recommends emotion-based techniques, whereas the others do not.</li>
+            <li style={{ paddingLeft: '20px' }}>Doctor 3 seems to be the most lenient.</li>
+          </ul>
+            }
         />
       </Grid>
       <Grid
@@ -92,17 +81,17 @@ export default function Dashboard() {
         gap='24px'
         mb={{ lg: "26px" }}>
         <ActiveUsers
-          title={"Active Users"}
+          title={"Time for Treatment This Week"}
           percentage={23}
           chart={<BarChart />}
         />
         <SalesOverview
-          title={"Sales Overview"}
+          title={"Cost of Coverage"}
           percentage={5}
           chart={<LineChart />}
         />
       </Grid>
-      <Grid
+      {/* <Grid
         templateColumns={{ sm: "1fr", md: "1fr 1fr", lg: "2fr 1fr" }}
         templateRows={{ sm: "1fr auto", md: "1fr", lg: "1fr" }}
         gap='24px'>
@@ -117,7 +106,7 @@ export default function Dashboard() {
           amount={30}
           data={timelineData}
         />
-      </Grid>
+      </Grid> */}
     </Flex>
   );
 }

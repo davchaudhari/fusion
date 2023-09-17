@@ -37,27 +37,23 @@ const ActiveUsers = ({ title, percentage, chart }) => {
           </Flex>
           <SimpleGrid gap={{ sm: "12px" }} columns={4}>
             <ChartStatistics
-              title={"Users"}
-              amount={"32,984"}
-              percentage={20}
+              title={"Dr. Smith"}
+              amount={"45 min"}
               icon={<WalletIcon h={"15px"} w={"15px"} color={iconBoxInside} />}
             />
             <ChartStatistics
-              title={"Clicks"}
-              amount={"2.42m"}
-              percentage={80}
+              title={"Dr. Desai"}
+              amount={"55 min"}
               icon={<RocketIcon h={"15px"} w={"15px"} color={iconBoxInside} />}
             />
             <ChartStatistics
-              title={"Sales"}
-              amount={"2,400$"}
-              percentage={30}
+              title={"Dr. Gandhi"}
+              amount={"65 min"}
               icon={<CartIcon h={"15px"} w={"15px"} color={iconBoxInside} />}
             />
             <ChartStatistics
-              title={"Items"}
-              amount={"320"}
-              percentage={40}
+              title={"Dr. Raj"}
+              amount={"35 min"}
               icon={<StatsIcon h={"15px"} w={"15px"} color={iconBoxInside} />}
             />
           </SimpleGrid>

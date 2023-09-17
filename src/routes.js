@@ -27,28 +27,12 @@ var dashRoutes = [
     layout: "/admin",
   },
   {
-    path: "/tables",
-    name: "Tables",
-    rtlName: "لوحة القيادة",
-    icon: <StatsIcon color="inherit" />,
-    component: Tables,
-    layout: "/admin",
-  },
-  {
     path: "/billing",
     name: "Billing",
     rtlName: "لوحة القيادة",
     icon: <CreditIcon color="inherit" />,
     component: Billing,
     layout: "/admin",
-  },
-  {
-    path: "/rtl-support-page",
-    name: "RTL",
-    rtlName: "آرتيإل",
-    icon: <SupportIcon color="inherit" />,
-    component: RTLPage,
-    layout: "/rtl",
   },
   {
     name: "ACCOUNT PAGES",
@@ -67,7 +51,7 @@ var dashRoutes = [
       },
       {
         path: "/signin",
-        name: "Sign In",
+        name: "Jane Smith",
         rtlName: "لوحة القيادة",
         icon: <DocumentIcon color="inherit" />,
         component: SignIn,
