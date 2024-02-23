@@ -7,6 +7,8 @@
 - `npm install`
 - `npm start`
 
+Fusion: Platform working towards streamlining medical data management, unifying advice, and empowering informed healthcare choices
+
 
 ## Licensing
 
